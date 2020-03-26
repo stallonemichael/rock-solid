@@ -1,13 +1,15 @@
 import React from 'react';
 
-import rockSolidHero from '../../assets/rock-solid_Logo.png';
+/* import rockSolidHero from '../../assets/rockSolid_pool-hero.png'; */
 import './hero.scss';
 
 const Hero = () => (
-  <div className='hero'>
-    <h1 className='hero-text'>ROCK SOLID</h1>
-    <img src={rockSolidHero} alt='Rock Solid' />
-    <h1 className='hero-text'>BRICK &amp; MASONRY</h1>
+  <div className='hero-image'>
+    <div className='hero-text'>
+      <h1>Welcome Home</h1>
+      <h2>Rock Solid Brick &amp; Masonry</h2>
+      <button>See More</button>
+    </div>
   </div>
 );
 
