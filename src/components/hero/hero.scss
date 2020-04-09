@@ -1,7 +1,8 @@
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../assets/rockSolid_pool-hero.png');
-  height: 65vh;
+    url('../../assets/backyard-pool.png');
+  height: 50vh;
+  margin-top: 72px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,15 +11,18 @@
   .hero-text {
     text-align: center;
     position: absolute;
-    top: 0;
+    top: 5%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -0%);
     color: white;
-    letter-spacing: 4px;
+    letter-spacing: 7px;
     text-transform: uppercase;
   }
   h1 {
     font-size: 72px;
+  }
+  h2 {
+    font-size: 26px;
   }
 }

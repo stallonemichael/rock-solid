@@ -1,6 +1,5 @@
 import React from 'react';
 
-/* import rockSolidHero from '../../assets/rockSolid_pool-hero.png'; */
 import './hero.scss';
 
 const Hero = () => (

@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Header from '../../components/header/header';
 import Hero from '../../components/hero/hero';
+import Directory from '../../components/directory/directory';
 import './homepage.scss';
 
 const HomePage = () => (
   <div className='homepage'>
-    <Header />
     <Hero />
+    <Directory />
   </div>
 );
 

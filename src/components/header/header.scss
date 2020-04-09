@@ -1,13 +1,16 @@
 $primary-color: #4193cb;
 
 .header {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  background-color: white;
   height: 72px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
-  z-index: 100;
+  z-index: 1000;
+  margin-bottom: 25px;
 
   .logo-container {
     height: 72px;
