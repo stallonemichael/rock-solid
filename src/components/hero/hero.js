@@ -11,7 +11,7 @@ const Hero = ({ history }) => (
       <h1>Welcome Home</h1>
       <h2>Rock Solid Brick &amp; Masonry</h2>
       <div className='button'>
-        <CustomButton onClick={() => history.push('/projects')}>
+        <CustomButton inverted onClick={() => history.push('/projects')}>
           SEE MORE
         </CustomButton>
       </div>
