@@ -1,13 +1,13 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import CustomButton from '../custom-button/custom-button';
+/* import CustomButton from '../custom-button/custom-button'; */
 
 import './hero.scss';
 
 const Hero = ({ history }) => (
   <div className='hero-image'>
-    <div className='hero-text'>
+    {/*     <div className='hero-text'>
       <h1>Welcome Home</h1>
       <h2>Rock Solid Brick &amp; Masonry</h2>
       <div className='button'>
@@ -15,7 +15,7 @@ const Hero = ({ history }) => (
           SEE MORE
         </CustomButton>
       </div>
-    </div>
+    </div> */}
   </div>
 );
 

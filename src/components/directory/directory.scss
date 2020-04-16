@@ -11,8 +11,32 @@
 .directory-menu {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(16, 5vw);
+  grid-template-rows: repeat(14, 5vw);
   grid-gap: 40px 25px;
-  padding: 30px;
+  padding: 24px;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 850px) {
+  .directory-heading {
+    font-size: 38px;
+  }
+  .directory-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .directory-heading {
+    font-size: inherit;
+  }
+  .directory-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  }
 }
