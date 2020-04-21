@@ -1,11 +1,11 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+/* import { withRouter } from 'react-router-dom'; */
 
 /* import CustomButton from '../custom-button/custom-button'; */
 
 import './hero.scss';
 
-const Hero = ({ history }) => (
+const Hero = (props) => (
   <div className='hero-image'>
     {/*     <div className='hero-text'>
       <h1>Welcome Home</h1>
@@ -19,4 +19,4 @@ const Hero = ({ history }) => (
   </div>
 );
 
-export default withRouter(Hero);
+export default Hero;

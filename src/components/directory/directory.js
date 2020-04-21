@@ -1,3 +1,6 @@
+/* TODO */
+/* Replace image for Hot Tubs */
+
 import React from 'react';
 
 import DIRECTORY_DATA from './directory.data';
@@ -10,7 +13,7 @@ class Directory extends React.Component {
     super(props);
 
     this.state = {
-      sections: DIRECTORY_DATA
+      sections: DIRECTORY_DATA,
     };
   }
 
