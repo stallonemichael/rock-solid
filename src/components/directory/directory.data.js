@@ -57,9 +57,9 @@ const DIRECTORY_DATA = [
   },
   {
     title: 'walkways',
-    imageUrl: 'projects/https://i.ibb.co/KL4mVRq/walkway3.jpg',
+    imageUrl: 'https://i.ibb.co/KL4mVRq/walkway3.jpg',
     id: 9,
-    linkUrl: 'walkways',
+    linkUrl: 'projects/walkways',
     imageNumber: 9,
   },
 ];

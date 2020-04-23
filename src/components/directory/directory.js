@@ -1,6 +1,3 @@
-/* TODO */
-/* Replace image for Hot Tubs */
-
 import React from 'react';
 
 import DIRECTORY_DATA from './directory.data';
