@@ -1,3 +1,6 @@
+//TODO
+//Rewrite css to be mobile first
+
 .directory-heading {
   display: flex;
   justify-content: center;
@@ -27,6 +30,7 @@
     flex-wrap: wrap;
     flex-basis: 100%;
     flex: 1;
+    grid-gap: 0;
   }
 }
 

@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from './pages/homepage/homepage';
 import ProjectsPage from './pages/projects/projects';
+import ContactPage from './pages/contact/contact';
 import Header from './components/header/header';
 import './App.css';
 
@@ -12,7 +13,9 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/projects' component={ProjectsPage} />
+        <Route path='/projects' component={ProjectsPage} />
+        <Route path='/contact' component={ContactPage} />
+        <Route path='/about' />
       </Switch>
     </div>
   );
