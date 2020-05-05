@@ -1,10 +1,6 @@
 .contact-page {
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  /* height: calc(100vh - 60px); */
-  /* justify-content: center; */
-  /*  margin: 30px auto; */
 
   .contact-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -14,7 +10,6 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    background-color: gray;
   }
 
   .contact-text {
@@ -24,16 +19,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     align-self: center;
     letter-spacing: 2px;
     text-transform: uppercase;
-    /*       position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 2px;
-    font-size: 32px; */
   }
 
   .contact-form {
@@ -42,5 +31,32 @@
     justify-content: center;
     align-self: center;
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .contact-page {
+    .contact-text {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  .contact-page {
+    .contact-image {
+      height: 45vh;
+    }
+    .contact-text {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .contact-page {
+    .contact-text {
+      font-size: 2.5rem;
+    }
   }
 }

@@ -1,4 +1,4 @@
-.project-item {
+/* .project-item {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -11,5 +11,32 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+  }
+} */
+
+.project-item {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+
+  .image {
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .project-item {
+    width: 45vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .project-item {
+    width: 23vw;
   }
 }
