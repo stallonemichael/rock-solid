@@ -5,19 +5,25 @@ import HomePage from './pages/homepage/homepage';
 import ProjectsPage from './pages/projects/projects';
 import ContactPage from './pages/contact/contact';
 import Header from './components/header/header';
-import './App.css';
+
+import { GlobalStyle } from './global';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './theme';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/projects' component={ProjectsPage} />
-        <Route path='/contact' component={ContactPage} />
-        <Route path='/about' />
-      </Switch>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div>
+        <GlobalStyle />
+        <Header />
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/projects' component={ProjectsPage} />
+          <Route path='/contact' component={ContactPage} />
+          <Route path='/about' />
+        </Switch>
+      </div>
+    </ThemeProvider>
   );
 };
 
