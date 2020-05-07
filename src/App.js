@@ -10,7 +10,7 @@ import { GlobalStyle } from './global';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
 
-const App = () => {
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <div>
@@ -25,6 +25,6 @@ const App = () => {
       </div>
     </ThemeProvider>
   );
-};
+}
 
 export default App;

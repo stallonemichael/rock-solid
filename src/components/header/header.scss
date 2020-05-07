@@ -27,7 +27,7 @@ $primary-color: #4193cb;
   .options {
     width: 50%;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: flex-end;
 
@@ -36,6 +36,14 @@ $primary-color: #4193cb;
       color: $primary-color;
       font-weight: 600;
       letter-spacing: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header {
+    .options {
+      display: flex;
     }
   }
 }
