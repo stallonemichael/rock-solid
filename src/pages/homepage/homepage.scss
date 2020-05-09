@@ -1,2 +1,36 @@
 .homepage {
+  display: flex;
+  flex-direction: column;
+
+  .contact-ribbon {
+    background: #4193cb;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+    padding: 15px;
+
+    .ribbon-text {
+      color: white;
+      display: flex;
+      align-self: center;
+      flex-wrap: wrap;
+      padding: 4px;
+      font-size: 18px;
+      text-transform: uppercase;
+
+      @media screen and (min-width: 550px) {
+        font-size: 24px;
+      }
+    }
+
+    button {
+      align-self: center;
+
+      &:hover {
+        border: 1px solid white;
+      }
+    }
+  }
 }

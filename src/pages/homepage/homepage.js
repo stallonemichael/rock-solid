@@ -11,7 +11,7 @@ const HomePage = () => (
     <Hero />
     <Directory />
     <div className='contact-ribbon'>
-      Rock Solid Brick &amp; Masonry
+      <div className='ribbon-text'>Rock Solid Brick &amp; Masonry</div>
       <CustomButton inverted>Get your free quote</CustomButton>
     </div>
   </div>
