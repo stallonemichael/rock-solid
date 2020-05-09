@@ -1,5 +1,5 @@
-const PROJECTS_DATA = [
-  {
+const PROJECTS_DATA = {
+  driveways: {
     id: 1,
     title: 'Driveways',
     routeName: 'driveways',
@@ -36,7 +36,7 @@ const PROJECTS_DATA = [
       },
     ],
   },
-  {
+  patios: {
     id: 2,
     title: 'Patios',
     routeName: 'patios',
@@ -93,7 +93,7 @@ const PROJECTS_DATA = [
       },
     ],
   },
-  {
+  outdoorliving: {
     id: 3,
     title: 'Outdoor Living',
     routeName: 'outdoorliving',
@@ -150,14 +150,14 @@ const PROJECTS_DATA = [
       },
     ],
   },
-  {
+  firepits: {
     id: 4,
     title: 'Fire Pits',
     routeName: 'firepits',
     items: [
       {
         id: 27,
-        name: '',
+        name: 'Fire Pits',
         imageUrl: 'https://i.ibb.co/WPLnQ1h/fire-pit1.png',
       },
       {
@@ -197,7 +197,7 @@ const PROJECTS_DATA = [
       },
     ],
   },
-  {
+  poolpatios: {
     id: 5,
     title: 'Pool Patios',
     routeName: 'poolpatios',
@@ -269,7 +269,7 @@ const PROJECTS_DATA = [
       },
     ],
   },
-  {
+  steps: {
     id: 6,
     title: 'Steps',
     routeName: 'steps',
@@ -337,7 +337,7 @@ const PROJECTS_DATA = [
       },
     ],
   },
-  {
+  stoops: {
     id: 7,
     title: 'Stoops',
     routeName: 'stoops',
@@ -369,7 +369,7 @@ const PROJECTS_DATA = [
       },
     ],
   },
-  {
+  veneer: {
     id: 8,
     title: 'Veneer',
     routeName: 'veneer',
@@ -406,7 +406,7 @@ const PROJECTS_DATA = [
       },
     ],
   },
-  {
+  walkways: {
     id: 9,
     title: 'Walkways',
     routeName: 'walkways',
@@ -443,6 +443,6 @@ const PROJECTS_DATA = [
       },
     ],
   },
-];
+};
 
 export default PROJECTS_DATA;

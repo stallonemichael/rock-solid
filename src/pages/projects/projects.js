@@ -1,30 +1,14 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
-import PROJECTS_DATA from './projects.data';
-import ProjectsPreview from '../../components/projects-preview/projects-preview';
+import ProjectsOverview from '../../components/projects-overview/projects-overview';
+import CollectionPage from '../collection/collection';
 
-import './projects.scss';
+const ProjectsPage = ({ match }) => (
+  <div className='projects'>
+    <Route exact path={`${match.path}`} component={ProjectsOverview} />
+    <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
+  </div>
+);
 
-class ProjectsPage extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      collections: PROJECTS_DATA,
-    };
-  }
-
-  render() {
-    const { collections } = this.state;
-    return (
-      <div className='projects'>
-        {collections.map(({ id, ...otherCollectionProps }) => (
-          <ProjectsPreview key={id} {...otherCollectionProps} />
-        ))}
-      </div>
-    );
-  }
-}
-
-export default withRouter(ProjectsPage);
+export default ProjectsPage;
