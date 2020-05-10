@@ -20,7 +20,7 @@ function App() {
           <Route exact path='/' component={HomePage} />
           <Route path='/projects' component={ProjectsPage} />
           <Route path='/contact' component={ContactPage} />
-          <Route path='/about' />
+          {/* <Route path='/about' /> */}
         </Switch>
       </div>
     </ThemeProvider>

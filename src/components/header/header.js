@@ -19,9 +19,9 @@ function Header() {
         <Link className='option' to='/projects'>
           PROJECTS
         </Link>
-        <Link className='option' to='/about'>
+        {/*         <Link className='option' to='/about'>
           ABOUT
-        </Link>
+        </Link> */}
         <Link className='option' to='/contact'>
           CONTACT
         </Link>
