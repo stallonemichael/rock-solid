@@ -14,9 +14,9 @@ const BurgerMenu = ({ open, ...otherBurgerProps }) => {
       <a href='/projects' tabIndex={tabIndex}>
         <span aria-hidden={true}>Projects</span>
       </a>
-      <a href='/about' tabIndex={tabIndex}>
+      {/*       <a href='/about' tabIndex={tabIndex}>
         <span aria-hidden={true}>About</span>
-      </a>
+      </a> */}
       <a href='/contact' tabIndex={tabIndex}>
         <span aria-hidden={true}>Contact</span>
       </a>
