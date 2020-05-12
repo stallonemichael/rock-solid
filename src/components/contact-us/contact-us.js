@@ -104,7 +104,7 @@ const ContactUs = () => {
         <CustomButton type='submit' value='Submit'>
           Submit
         </CustomButton>
-        <div className={`form-message`}>{errorAlert.alertMessage}</div>
+        <div className='form-message'>{errorAlert.alertMessage}</div>
       </form>
     </div>
   );
