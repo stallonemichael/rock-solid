@@ -16,6 +16,10 @@ const ContactUs = () => {
     message: '',
   });
 
+  const [errorAlert, setErrorAlert] = useState({
+    alertMessage: null,
+  });
+
   const handleChange = (event) => {
     const { value, name } = event.target;
     setFormData({
@@ -32,6 +36,8 @@ const ContactUs = () => {
         formData
       )
       .then((res) => {
+        console.log(res.data);
+        setTimeout(() => setErrorAlert({ alertMessage: '' }), 3000);
         db.collection('emails/').add({
           name: formData.name,
           email: formData.email,
@@ -42,12 +48,20 @@ const ContactUs = () => {
       })
       .catch((err) => {
         console.log(err);
+        setTimeout(() => setErrorAlert({ alertMessage: '' }), 3000);
+        setErrorAlert({
+          alertMessage: 'Message failed to send',
+        });
       });
     setFormData({
       name: '',
       email: '',
       phone: '',
       message: '',
+      errorAlert: '',
+    });
+    setErrorAlert({
+      alertMessage: 'Message sent successfully',
     });
   };
 
@@ -90,6 +104,7 @@ const ContactUs = () => {
         <CustomButton type='submit' value='Submit'>
           Submit
         </CustomButton>
+        <div className={`form-message`}>{errorAlert.alertMessage}</div>
       </form>
     </div>
   );
