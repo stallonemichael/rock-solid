@@ -9,7 +9,7 @@ const INITIAL_STATE = {
     },
     {
       title: 'patios',
-      imageUrl: 'https://i.ibb.co/T0kXGtj/patio5.jpg',
+      imageUrl: 'https://i.ibb.co/CBJQKgD/patio77.jpg',
       id: 2,
       linkUrl: 'projects/patios',
       imageNumber: 2,

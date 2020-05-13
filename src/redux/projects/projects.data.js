@@ -44,12 +44,12 @@ const PROJECTS_DATA = {
       {
         id: 7,
         name: 'Patios',
-        imageUrl: 'https://i.ibb.co/ydzVZx2/patio1.jpg',
+        imageUrl: 'https://i.ibb.co/7zWVxfM/patio78.jpg',
       },
       {
         id: 8,
         name: 'Patios',
-        imageUrl: 'https://i.ibb.co/7Knfrcx/patio2.jpg',
+        imageUrl: 'https://i.ibb.co/ydzVZx2/patio1.jpg',
       },
       {
         id: 9,
@@ -91,6 +91,16 @@ const PROJECTS_DATA = {
         name: 'Patios',
         imageUrl: 'https://i.ibb.co/31pHVyf/patio10.jpg',
       },
+      /* {
+        id: 77,
+        name: 'Patios',
+        imageUrl: 'https://i.ibb.co/ydzVZx2/patio2.jpg',
+      }, 
+         {
+        id: 77,
+        name: 'Patios',
+        imageUrl: 'https://i.ibb.co/ydzVZx2/patio77.jpg',
+      }, */
     ],
   },
   outdoorliving: {
@@ -440,6 +450,11 @@ const PROJECTS_DATA = {
         id: 76,
         name: 'Walkways',
         imageUrl: 'https://i.ibb.co/FqmbP1R/walkway6.jpg',
+      },
+      {
+        id: 77,
+        name: 'Walkways',
+        imageUrl: 'https://i.ibb.co/DYWKv9w/walkway7.jpg',
       },
     ],
   },
