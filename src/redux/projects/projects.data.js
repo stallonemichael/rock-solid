@@ -198,7 +198,7 @@ const PROJECTS_DATA = {
       {
         id: 33,
         name: 'Fire Pits',
-        imageUrl: 'https://i.ibb.co/6v6S6wG/fire-pit7.png',
+        imageUrl: 'https://i.ibb.co/zFNYKGp/firepit7.jpg',
       },
       {
         id: 34,

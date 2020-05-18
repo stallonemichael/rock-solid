@@ -1,25 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { StyledMenu } from './burger-menu.styled';
 
-const BurgerMenu = ({ open, ...otherBurgerProps }) => {
+const BurgerMenu = ({ open, setOpen, ...otherBurgerProps }) => {
   const isHidden = open ? true : false;
   const tabIndex = isHidden ? 0 : -1;
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...otherBurgerProps}>
-      <a href='/' tabIndex={tabIndex}>
+      <Link to='/' tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         <span aria-hidden={true}>ROCK SOLID</span>
-      </a>
-      <a href='/projects' tabIndex={tabIndex}>
+      </Link>
+      <Link to='/projects' tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         <span aria-hidden={true}>Projects</span>
-      </a>
+      </Link>
       {/*       <a href='/about' tabIndex={tabIndex}>
         <span aria-hidden={true}>About</span>
       </a> */}
-      <a href='/contact' tabIndex={tabIndex}>
+      <Link to='/contact' tabIndex={tabIndex} onClick={() => setOpen(!open)}>
         <span aria-hidden={true}>Contact</span>
-      </a>
+      </Link>
     </StyledMenu>
   );
 };
