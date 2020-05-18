@@ -1,5 +1,6 @@
 {
   "name": "rock-solid",
+  "homepage": "http://rocksolidbrickandmasonry.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

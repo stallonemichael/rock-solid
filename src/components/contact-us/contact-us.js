@@ -9,12 +9,7 @@ import 'firebase/firestore';
 import { db } from '../../firebase/firebase.utils';
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
+  const [formData, setFormData] = useState({});
 
   const [errorAlert, setErrorAlert] = useState({
     alertMessage: null,
@@ -71,7 +66,7 @@ const ContactUs = () => {
         <FormInput
           name='name'
           type='name'
-          value={formData.name}
+          value={formData.name || ''}
           label='Name'
           handleChange={handleChange}
           required
@@ -80,7 +75,7 @@ const ContactUs = () => {
           name='email'
           type='email'
           label='Email'
-          value={formData.email}
+          value={formData.email || ''}
           handleChange={handleChange}
           required
         />
@@ -88,7 +83,7 @@ const ContactUs = () => {
           name='phone'
           type='tel'
           label='Phone'
-          value={formData.phone}
+          value={formData.phone || ''}
           handleChange={handleChange}
           required
         />
@@ -96,7 +91,7 @@ const ContactUs = () => {
           name='message'
           type='text'
           label='How can we help?'
-          value={formData.message}
+          value={formData.message || ''}
           onChange={handleChange}
           required
         />
