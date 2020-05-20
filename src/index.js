@@ -1,19 +1,33 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
 
 import './index.css';
 import App from './App';
 
+const history = createBrowserHistory();
+const trackingID = 'UA-167230851-1';
+ReactGA.initialize(trackingID, {
+  debug: true,
+});
+
+history.listen((location) => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
+
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <Router history={history}>
       <App />
-    </BrowserRouter>
+    </Router>
   </Provider>,
   document.getElementById('root')
 );
