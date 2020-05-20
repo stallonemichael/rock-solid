@@ -6,8 +6,10 @@ import React from 'react';
 import './hero.scss';
 
 const Hero = (props) => (
-  <div className='hero-image'>
-    {/*     <div className='hero-text'>
+  <div className='hero'>
+    <h1 className='hero-title'>Rock Solid Brick &amp; Masonry</h1>
+    <div className='hero-image'>
+      {/*     <div className='hero-text'>
       <h1>Welcome Home</h1>
       <h2>Rock Solid Brick &amp; Masonry</h2>
       <div className='button'>
@@ -16,6 +18,7 @@ const Hero = (props) => (
         </CustomButton>
       </div>
     </div> */}
+    </div>
   </div>
 );
 
