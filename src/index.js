@@ -14,9 +14,7 @@ import App from './App';
 
 const history = createBrowserHistory();
 const trackingID = 'UA-167230851-1';
-ReactGA.initialize(trackingID, {
-  debug: true,
-});
+ReactGA.initialize(trackingID);
 
 history.listen((location) => {
   ReactGA.set({ page: location.pathname });
