@@ -10,7 +10,6 @@ import { db } from '../../firebase/firebase.utils';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({});
-
   const [errorAlert, setErrorAlert] = useState({
     alertMessage: null,
   });
@@ -32,7 +31,10 @@ const ContactUs = () => {
       )
       .then((res) => {
         console.log(res.data);
-        setTimeout(() => setErrorAlert({ alertMessage: '' }), 3000);
+        setTimeout(
+          () => setErrorAlert({ alertMessage: 'Message sent successfully' }),
+          3000
+        );
         db.collection('emails/').add({
           name: formData.name,
           email: formData.email,
@@ -43,10 +45,10 @@ const ContactUs = () => {
       })
       .catch((err) => {
         console.log(err);
-        setTimeout(() => setErrorAlert({ alertMessage: '' }), 3000);
-        setErrorAlert({
-          alertMessage: 'Message failed to send',
-        });
+        setTimeout(
+          () => setErrorAlert({ alertMessage: 'Message failed to send' }),
+          3000
+        );
       });
     setFormData({
       name: '',
@@ -54,9 +56,6 @@ const ContactUs = () => {
       phone: '',
       message: '',
       errorAlert: '',
-    });
-    setErrorAlert({
-      alertMessage: 'Message sent successfully',
     });
   };
 
