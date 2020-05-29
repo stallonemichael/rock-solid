@@ -23,7 +23,7 @@ const INITIAL_STATE = {
     },
     {
       title: 'fire pits',
-      imageUrl: 'https://i.ibb.co/bJtF8gY/fire-pit8.png',
+      imageUrl: 'https://i.ibb.co/zFNYKGp/firepit7.jpg',
       id: 4,
       linkUrl: 'projects/firepits',
       imageNumber: 4,

@@ -200,11 +200,11 @@ const PROJECTS_DATA = {
         name: 'Fire Pits',
         imageUrl: 'https://i.ibb.co/zFNYKGp/firepit7.jpg',
       },
-      {
+      /*       {
         id: 34,
         name: 'Fire Pits',
         imageUrl: 'https://i.ibb.co/bJtF8gY/fire-pit8.png',
-      },
+      }, */
     ],
   },
   poolpatios: {

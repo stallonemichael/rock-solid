@@ -3,14 +3,6 @@
     cursor: pointer;
     opacity: 0.8;
     animation: fadeInImage 1s;
-
-    & .title {
-      display: flex;
-      font-size: 22px;
-      opacity: 1;
-      animation: fadeInText 1.2s;
-      font-weight: 600;
-    }
   }
 
   .background-image {
@@ -21,7 +13,10 @@
     opacity: 1;
   }
   .title {
-    opacity: 0;
+    display: flex;
+    font-size: 22px;
+    opacity: 1;
+    font-weight: 600;
   }
 }
 
@@ -78,15 +73,6 @@
   grid-column-end: 13;
   grid-row-start: 11;
   grid-row-end: 15;
-}
-
-@keyframes fadeInText {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeInImage {
