@@ -3,6 +3,7 @@ import React from 'react';
 import './contact.scss';
 
 import ContactUs from '../../components/contact-us/contact-us';
+import Footer from '../../components/footer/footer';
 
 const ContactPage = () => (
   <div className='contact-page'>
@@ -13,6 +14,7 @@ const ContactPage = () => (
 
     <div className='contact-image'></div>
     <ContactUs />
+    <Footer />
   </div>
 );
 
