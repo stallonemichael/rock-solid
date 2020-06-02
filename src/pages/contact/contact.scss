@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  .contact-image {
+  .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('https://i.ibb.co/FYCccPT/pool-patio7.jpg');
     background-position: 0 40%;
@@ -12,7 +12,7 @@
     justify-content: center;
   }
 
-  .contact-text {
+  .hero-text {
     color: white;
     position: absolute;
     display: flex;
@@ -32,22 +32,59 @@
     align-self: center;
     width: 50%;
   }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+    h3 {
+      width: 100%;
+    }
+  }
+  .contact-phone {
+    align-self: center;
+    color: #4193cb;
+    margin-top: 4px;
+
+    .phone-number {
+      color: inherit;
+      font-size: 20px;
+    }
+  }
 }
 
 @media screen and (min-width: 500px) {
   .contact-page {
-    .contact-text {
+    .hero-text {
       font-size: 2rem;
+    }
+    .contact-info {
+      h3 {
+        width: 75%;
+      }
+    }
+    .contact-phone {
+      .phone-number {
+        margin-left: 6px;
+        font-size: 22px;
+      }
     }
   }
 }
 
 @media (orientation: landscape) {
   .contact-page {
-    .contact-image {
+    .hero-image {
       height: 45vh;
     }
-    .contact-text {
+    .hero-text {
       font-size: 1.5rem;
     }
   }
@@ -55,8 +92,19 @@
 
 @media screen and (min-width: 820px) {
   .contact-page {
-    .contact-text {
+    .hero-text {
       font-size: 2.5rem;
+    }
+    .contact-info {
+      font-size: 22px;
+      h3 {
+        width: 75%;
+      }
+    }
+    .contact-phone {
+      .phone-number {
+        font-size: 24px;
+      }
     }
   }
 }
