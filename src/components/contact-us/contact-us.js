@@ -30,7 +30,6 @@ const ContactUs = () => {
         formData
       )
       .then((res) => {
-        console.log(res.data);
         setTimeout(
           () => setErrorAlert({ alertMessage: 'Message sent successfully' }),
           3000
@@ -44,7 +43,6 @@ const ContactUs = () => {
         });
       })
       .catch((err) => {
-        console.log(err);
         setTimeout(
           () => setErrorAlert({ alertMessage: 'Message failed to send' }),
           3000
