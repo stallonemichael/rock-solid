@@ -12,7 +12,7 @@ const PROJECTS_DATA = {
       {
         id: 2,
         name: 'Driveway 2',
-        imageUrl: 'https://i.ibb.co/bm45twx/driveway2.jpg',
+        imageUrl: 'https://i.ibb.co/CQdzwvH/driveway6.jpg',
       },
       {
         id: 3,
@@ -29,11 +29,6 @@ const PROJECTS_DATA = {
         name: 'Driveway 5',
         imageUrl: 'https://i.ibb.co/JC8X1dG/driveway5.jpg',
       },
-      {
-        id: 6,
-        name: 'Driveway 6',
-        imageUrl: 'https://i.ibb.co/CQdzwvH/driveway6.jpg',
-      },
     ],
   },
   patios: {
@@ -49,7 +44,7 @@ const PROJECTS_DATA = {
       {
         id: 8,
         name: 'Patios',
-        imageUrl: 'https://i.ibb.co/ydzVZx2/patio1.jpg',
+        imageUrl: 'https://i.ibb.co/R9xkbqy/patio2.jpg',
       },
       {
         id: 9,
@@ -79,7 +74,7 @@ const PROJECTS_DATA = {
       {
         id: 14,
         name: 'Patios',
-        imageUrl: 'https://i.ibb.co/R9xkbqy/patio8.jpg',
+        imageUrl: 'https://i.ibb.co/ydzVZx2/patio1.jpg',
       },
       {
         id: 15,
@@ -91,16 +86,6 @@ const PROJECTS_DATA = {
         name: 'Patios',
         imageUrl: 'https://i.ibb.co/31pHVyf/patio10.jpg',
       },
-      /* {
-        id: 77,
-        name: 'Patios',
-        imageUrl: 'https://i.ibb.co/ydzVZx2/patio2.jpg',
-      }, 
-         {
-        id: 77,
-        name: 'Patios',
-        imageUrl: 'https://i.ibb.co/ydzVZx2/patio77.jpg',
-      }, */
     ],
   },
   outdoorliving: {
@@ -200,11 +185,6 @@ const PROJECTS_DATA = {
         name: 'Fire Pits',
         imageUrl: 'https://i.ibb.co/zFNYKGp/firepit7.jpg',
       },
-      /*       {
-        id: 34,
-        name: 'Fire Pits',
-        imageUrl: 'https://i.ibb.co/bJtF8gY/fire-pit8.png',
-      }, */
     ],
   },
   poolpatios: {
