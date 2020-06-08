@@ -6,7 +6,7 @@ import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
 import axios from 'axios';
 import 'firebase/firestore';
-import { db } from '../../firebase/firebase.utils';
+import { firestore } from '../../firebase/firebase.utils';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({});
@@ -30,11 +30,8 @@ const ContactUs = () => {
         formData
       )
       .then((res) => {
-        setTimeout(
-          () => setErrorAlert({ alertMessage: 'Message sent successfully' }),
-          3000
-        );
-        db.collection('emails/').add({
+        setTimeout(() => setErrorAlert({ alertMessage: '' }), 3000);
+        firestore.collection('emails/').add({
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
@@ -43,10 +40,8 @@ const ContactUs = () => {
         });
       })
       .catch((err) => {
-        setTimeout(
-          () => setErrorAlert({ alertMessage: 'Message failed to send' }),
-          3000
-        );
+        setTimeout(() => setErrorAlert({ alertMessage: '' }), 3000);
+        setErrorAlert({ alertMessage: 'Message failed to send' });
       });
     setFormData({
       name: '',
@@ -55,6 +50,7 @@ const ContactUs = () => {
       message: '',
       errorAlert: '',
     });
+    setErrorAlert({ alertMessage: 'Message sent successfully' });
   };
 
   return (

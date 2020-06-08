@@ -15,4 +15,9 @@ const config = {
 
 firebase.initializeApp(config);
 
-export const db = firebase.firestore();
+export const addCollectionAndDocuments = (collectionKey, objectsToAdd) => {
+  const collectionRef = firestore.collection(collectionKey);
+  console.log(collectionRef);
+};
+
+export const firestore = firebase.firestore();
