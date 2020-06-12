@@ -1,34 +1,27 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-/* import { ReactComponent as Logo } from '../../assets/rock_solid.svg'; */
 import Burger from '../burger/burger';
 import BurgerMenu from '../burger-menu/burger-menu';
 
-import './header.scss';
+import {
+  HeaderContainer,
+  LogoContainer,
+  OptionsContainer,
+  OptionLink,
+} from './header.styled';
 
 function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <div className='header'>
-      <Link className='logo-container' to='/'>
-        {/* <Logo /> */}
-        ROCK SOLID
-      </Link>
-      <div className='options'>
-        <Link className='option' to='/projects'>
-          PROJECTS
-        </Link>
-        {/*         <Link className='option' to='/about'>
-          ABOUT
-        </Link> */}
-        <Link className='option' to='/contact'>
-          CONTACT
-        </Link>
-      </div>
+    <HeaderContainer>
+      <LogoContainer to='/'>ROCK SOLID</LogoContainer>
+      <OptionsContainer>
+        <OptionLink to='/projects'>PROJECTS</OptionLink>
+        <OptionLink to='/contact'>CONTACT</OptionLink>
+      </OptionsContainer>
       <Burger open={open} setOpen={setOpen} />
       <BurgerMenu open={open} setOpen={setOpen} />
-    </div>
+    </HeaderContainer>
   );
 }
 

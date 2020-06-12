@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 
-import './contact-us.scss';
+/* import './contact-us.scss'; */
+
+import {
+  ContactUsContainer,
+  FormContainer,
+  ButtonContainer,
+  FormMessageContainer,
+} from './contact-us.styled';
 
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
@@ -54,8 +61,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='contact-us'>
-      <form onSubmit={handleSubmit}>
+    <ContactUsContainer>
+      <FormContainer onSubmit={handleSubmit}>
         <FormInput
           name='name'
           type='name'
@@ -88,13 +95,15 @@ const ContactUs = () => {
           onChange={handleChange}
           required
         />
+        <ButtonContainer>
+          <CustomButton type='submit' value='Submit'>
+            Submit
+          </CustomButton>
+        </ButtonContainer>
 
-        <CustomButton type='submit' value='Submit'>
-          Submit
-        </CustomButton>
-        <div className='form-message'>{errorAlert.alertMessage}</div>
-      </form>
-    </div>
+        <FormMessageContainer>{errorAlert.alertMessage}</FormMessageContainer>
+      </FormContainer>
+    </ContactUsContainer>
   );
 };
 

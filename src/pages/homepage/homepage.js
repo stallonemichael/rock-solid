@@ -7,21 +7,25 @@ import CustomButton from '../../components/custom-button/custom-button';
 import AboutContent from '../../components/about-content/about-content';
 import Footer from '../../components/footer/footer';
 
-import './homepage.scss';
+import {
+  HomepageContainer,
+  ContactRibbon,
+  RibbonText,
+} from './homepage.styled';
 
 const HomePage = ({ history }) => (
-  <div className='homepage'>
+  <HomepageContainer>
     <Hero />
     <Directory />
-    <div className='contact-ribbon'>
-      <div className='ribbon-text'>Rock Solid Brick &amp; Masonry</div>
+    <ContactRibbon>
+      <RibbonText>Rock Solid Brick &amp; Masonry</RibbonText>
       <CustomButton onClick={() => history.push('/contact')} inverted>
         Get your free quote
       </CustomButton>
-    </div>
+    </ContactRibbon>
     <AboutContent />
     <Footer />
-  </div>
+  </HomepageContainer>
 );
 
 export default withRouter(HomePage);

@@ -41,7 +41,7 @@ class ProjectsPage extends React.Component {
     const { match } = this.props;
     const { loading } = this.state;
     return (
-      <div className='shop-page'>
+      <div>
         <Route
           exact
           path={`${match.path}`}

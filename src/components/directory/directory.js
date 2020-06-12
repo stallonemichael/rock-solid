@@ -7,15 +7,21 @@ import { createStructuredSelector } from 'reselect';
 import { selectDirectorySections } from '../../redux/directory/directory.selectors';
 
 import './directory.scss';
+import {
+  DirectoryHeadingContainer,
+  DirectoryMenuContainer,
+} from './directory.styled';
 
 const Directory = ({ sections }) => (
   <div>
-    <h1 className='directory-heading'>Let Us design your next project</h1>
-    <div className='directory-menu'>
+    <DirectoryHeadingContainer>
+      Let Us design your next project
+    </DirectoryHeadingContainer>
+    <DirectoryMenuContainer>
       {sections.map(({ id, ...otherSectionProps }) => (
         <MenuItem key={id} {...otherSectionProps} />
       ))}
-    </div>
+    </DirectoryMenuContainer>
   </div>
 );
 

@@ -1,6 +1,13 @@
 import React from 'react';
 
-import './contact.scss';
+import {
+  ContactPageContainer,
+  HeroImage,
+  HeroText,
+  ContactInfo,
+  ContactPhone,
+  PhoneNumber,
+} from './contact.styled';
 
 import ContactUs from '../../components/contact-us/contact-us';
 import Footer from '../../components/footer/footer';
@@ -8,29 +15,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 const ContactPage = () => (
-  <div className='contact-page'>
-    <div className='hero-text'>
+  <ContactPageContainer>
+    <HeroText>
       <h1>WELCOME HOME</h1>
       <span>Contact Us Today</span>
-    </div>
+    </HeroText>
 
-    <div className='hero-image'></div>
-    <div className='contact-info'>
+    <HeroImage></HeroImage>
+    <ContactInfo>
       <h3>
         Thank you for considering Rock Solid Brick &amp; Masonry for your next
         masonry project. We look forward to hearing from you!
       </h3>
-    </div>
-    <div className='contact-phone'>
+    </ContactInfo>
+    <ContactPhone>
       <FontAwesomeIcon icon={faPhoneAlt} size='lg' />
-      <a className='phone-number' href='tel:1-631-872-3865'>
-        631-872-3865
-      </a>
-    </div>
+      <PhoneNumber href='tel:1-631-872-3865'>631-872-3865</PhoneNumber>
+    </ContactPhone>
 
     <ContactUs />
     <Footer />
-  </div>
+  </ContactPageContainer>
 );
 
 export default ContactPage;

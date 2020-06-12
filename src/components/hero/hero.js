@@ -2,24 +2,23 @@ import React from 'react';
 /* import { withRouter } from 'react-router-dom'; */
 
 /* import CustomButton from '../custom-button/custom-button'; */
-
-import './hero.scss';
+import { HeroContainer, HeroTitle, HeroImage } from './hero.styled';
 
 const Hero = (props) => (
-  <div className='hero'>
-    <h1 className='hero-title'>Rock Solid Brick &amp; Masonry</h1>
-    <div className='hero-image'>
-      {/*     <div className='hero-text'>
+  <HeroContainer>
+    <HeroTitle>Rock Solid Brick &amp; Masonry</HeroTitle>
+    <HeroImage>
+      {/*     <HeroText>
       <h1>Welcome Home</h1>
       <h2>Rock Solid Brick &amp; Masonry</h2>
-      <div className='button'>
+      <ButtonContainer
         <CustomButton inverted onClick={() => history.push('/projects')}>
           SEE MORE
         </CustomButton>
-      </div>
-    </div> */}
-    </div>
-  </div>
+      </ButtonContainer>
+    </HeroText> */}
+    </HeroImage>
+  </HeroContainer>
 );
 
 export default Hero;
