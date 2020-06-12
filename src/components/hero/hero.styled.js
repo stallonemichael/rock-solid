@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
 export const HeroTitle = styled.h1`
   display: flex;
   justify-content: center;
-  margin: 24px;
+  margin: 10px 0 10px 0;
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 2px;
@@ -21,6 +21,7 @@ export const HeroTitle = styled.h1`
 
   @media screen and (min-width: 850px) {
     font-size: 50px;
+    margin: 24px;
   }
 `;
 
