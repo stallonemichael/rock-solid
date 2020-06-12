@@ -50,7 +50,7 @@ export const ContactInfo = styled.div`
     font-size: 22px;
   }
 
-  &h3 {
+  & h3 {
     width: 100%;
     @media screen and (min-width: 500px) {
       width: 75%;
