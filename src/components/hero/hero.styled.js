@@ -11,33 +11,33 @@ export const HeroTitle = styled.h1`
   justify-content: center;
   margin: 24px;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 20px;
   letter-spacing: 2px;
 
-  @media screen and (max-width: 500px) {
-    font-size: 20px;
+  @media screen and (min-width: 500px) {
+    font-size: 30px;
     margin: 10px 0 10px 0;
   }
 
-  @media screen and (max-width: 850px) {
-    font-size: 30px;
+  @media screen and (min-width: 850px) {
+    font-size: 50px;
   }
 `;
 
 export const HeroImage = styled(LogoSVG)`
-  height: 80vh;
+  height: 50vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   /*   background-size: cover; */
   /* position: relative; */
 
-  @media screen and (max-width: 500px) {
-    height: 50vh;
+  @media screen and (min-width: 500px) {
+    height: 60vh;
   }
 
-  @media screen and (max-width: 850px) {
-    height: 60vh;
+  @media screen and (min-width: 850px) {
+    height: 80vh;
   }
 `;
 
