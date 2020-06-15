@@ -20,8 +20,7 @@ const ContactPage = () => (
       <h1>WELCOME HOME</h1>
       <span>Contact Us Today</span>
     </HeroText>
-
-    <HeroImage></HeroImage>
+    <HeroImage />
     <ContactInfo>
       <h3>
         Thank you for considering Rock Solid Brick &amp; Masonry for your next
