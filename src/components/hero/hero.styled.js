@@ -30,8 +30,6 @@ export const HeroImage = styled(LogoSVG)`
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  /*   background-size: cover; */
-  /* position: relative; */
 
   @media screen and (min-width: 500px) {
     height: 60vh;
