@@ -6,12 +6,12 @@ import ProjectsOverviewContainer from '../../components/projects-overview/projec
 import CollectionPageContainer from '../collection/collection.container';
 import Footer from '../../components/footer/footer';
 
-import { fetchCollectionsStartAsync } from '../../redux/projects/projects.actions';
+import { fetchCollectionsStart } from '../../redux/projects/projects.actions';
 
 class ProjectsPage extends React.Component {
   componentDidMount() {
-    const { fetchCollectionsStartAsync } = this.props;
-    fetchCollectionsStartAsync();
+    const { fetchCollectionsStart } = this.props;
+    fetchCollectionsStart();
   }
   render() {
     const { match } = this.props;
@@ -34,7 +34,7 @@ class ProjectsPage extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync()),
+  fetchCollectionsStart: () => dispatch(fetchCollectionsStart()),
 });
 
 export default connect(null, mapDispatchToProps)(ProjectsPage);

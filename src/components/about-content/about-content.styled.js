@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as LogoSVG } from '../../assets/rock_solid.svg';
+import { ReactComponent as LogoSVG } from '../../assets/rock_solid_resized.svg';
 
 export const AboutContentContainer = styled.div`
   padding: 20px;

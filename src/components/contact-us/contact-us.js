@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-/* import './contact-us.scss'; */
-
 import {
   ContactUsContainer,
   FormContainer,

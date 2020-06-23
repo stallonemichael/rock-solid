@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as LogoSVG } from '../../assets/rock_solid.svg';
+import { ReactComponent as LogoSVG } from '../../assets/rock_solid_resized.svg';
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -39,6 +39,23 @@ export const HeroImage = styled(LogoSVG)`
     height: 80vh;
   }
 `;
+
+/* export const HeroImage = styled.div`
+  height: 50vh;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://i.ibb.co/CWF3s4C/rock-solid-resized.png');
+
+  @media screen and (min-width: 500px) {
+    height: 60vh;
+  }
+
+  @media screen and (min-width: 850px) {
+    height: 80vh;
+  }
+`; */
 
 export const HeroText = styled.div`
   text-align: center;
