@@ -2,58 +2,30 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import WithSpinner from '../../components/with-spinner/with-spinner';
-
-import ProjectsOverview from '../../components/projects-overview/projects-overview';
-import CollectionPage from '../collection/collection';
+import ProjectsOverviewContainer from '../../components/projects-overview/projects-overview.container';
+import CollectionPageContainer from '../collection/collection.container';
 import Footer from '../../components/footer/footer';
 
-import { updateCollections } from '../../redux/projects/projects.actions';
-
-import {
-  firestore,
-  convertCollectionsSnapshotToMap,
-} from '../../firebase/firebase.utils';
-
-const ProjectsOverviewWithSpinner = WithSpinner(ProjectsOverview);
-const CollectionPageWithSpinner = WithSpinner(CollectionPage);
+import { fetchCollectionsStartAsync } from '../../redux/projects/projects.actions';
 
 class ProjectsPage extends React.Component {
-  state = {
-    loading: true,
-  };
-
-  unsubscribeFromSnapshot = null;
-
   componentDidMount() {
-    const { updateCollections } = this.props;
-    const collectionRef = firestore.collection('collections');
-
-    this.unsubscribeFromSnapshot = collectionRef.onSnapshot(
-      async (snapshot) => {
-        const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-        updateCollections(collectionsMap);
-        this.setState({ loading: false });
-      }
-    );
+    const { fetchCollectionsStartAsync } = this.props;
+    fetchCollectionsStartAsync();
   }
   render() {
     const { match } = this.props;
-    const { loading } = this.state;
+
     return (
       <div>
         <Route
           exact
           path={`${match.path}`}
-          render={(props) => (
-            <ProjectsOverviewWithSpinner isLoading={loading} {...props} />
-          )}
+          component={ProjectsOverviewContainer}
         />
         <Route
           path={`${match.path}/:collectionId`}
-          render={(props) => (
-            <CollectionPageWithSpinner isLoading={loading} {...props} />
-          )}
+          component={CollectionPageContainer}
         />
         <Footer />
       </div>
@@ -62,7 +34,7 @@ class ProjectsPage extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  updateCollections: (collectionsMap) =>
-    dispatch(updateCollections(collectionsMap)),
+  fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync()),
 });
+
 export default connect(null, mapDispatchToProps)(ProjectsPage);

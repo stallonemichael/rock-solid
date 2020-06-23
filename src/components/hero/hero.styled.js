@@ -21,7 +21,7 @@ export const HeroTitle = styled.h1`
 
   @media screen and (min-width: 850px) {
     font-size: 50px;
-    margin: 24px;
+    margin: 12px;
   }
 `;
 
