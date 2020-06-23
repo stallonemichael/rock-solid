@@ -1,9 +1,4 @@
 import ProjectsActionTypes from './projects.types';
-/* 
-import {
-  firestore,
-  convertCollectionsSnapshotToMap,
-} from '../../firebase/firebase.utils'; */
 
 export const fetchCollectionsStart = () => ({
   type: ProjectsActionTypes.FETCH_COLLECTIONS_START,
@@ -19,7 +14,7 @@ export const fetchCollectionsFailure = (errorMessage) => ({
   payload: errorMessage,
 });
 
-/* reduc-thunk function */
+/* redux-thunk function */
 /* export const fetchCollectionsStartAsync = () => {
   return (dispatch) => {
     const collectionRef = firestore.collection('collections');

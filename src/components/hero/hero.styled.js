@@ -26,7 +26,7 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroImage = styled(LogoSVG)`
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ export const HeroImage = styled(LogoSVG)`
   }
 
   @media screen and (min-width: 850px) {
-    height: 80vh;
+    height: 70vh;
   }
 `;
 

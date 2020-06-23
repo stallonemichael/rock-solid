@@ -9,6 +9,15 @@ const fadeInImage = keyframes`
   }
 `;
 
+const fadeOutImage = keyframes`
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
 export const MenuItemContainer = styled.div`
   height: 300px;
   width: 100%;
@@ -16,12 +25,18 @@ export const MenuItemContainer = styled.div`
   flex-direction: column;
   margin-bottom: 8px;
   padding: 8px;
+  cursor: pointer;
 
   @media screen and (min-width: 530px) {
     display: block;
     width: 50%;
     height: 300px;
     padding: 16px 12px;
+    animation: ${fadeOutImage} 1s;
+    &:hover {
+      opacity: 0.8;
+      animation: ${fadeInImage} 1s;
+    }
   }
 
   @media screen and (min-width: 850px) {
@@ -30,11 +45,7 @@ export const MenuItemContainer = styled.div`
     width: 100%;
     margin-bottom: 8px;
     padding: 0;
-    &:hover {
-      cursor: pointer;
-      opacity: 0.8;
-      animation: ${fadeInImage} 1s;
-    }
+
     &.menu-item-1 {
       grid-column-start: 1;
       grid-column-end: 5;
