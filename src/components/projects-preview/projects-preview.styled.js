@@ -15,6 +15,9 @@ export const Title = styled.h1`
   justify-content: center;
   cursor: pointer;
   font-size: 38px;
+  &:hover {
+    color: #808080;
+  }
 `;
 
 export const PreviewContainer = styled.div`

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import axios from 'axios';
+import { firestore } from '../../firebase/firebase.utils';
+
 import {
   ContactUsContainer,
   FormContainer,
@@ -9,9 +12,6 @@ import {
 
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
-import axios from 'axios';
-import 'firebase/firestore';
-import { firestore } from '../../firebase/firebase.utils';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({});
@@ -35,8 +35,8 @@ const ContactUs = () => {
         formData
       )
       .then((res) => {
-        setTimeout(() => setErrorAlert({ alertMessage: '' }), 3000);
-        firestore.collection('emails/').add({
+        setTimeout(() => setErrorAlert({ alertMessage: '' }), 2000);
+        firestore.collection('emails').add({
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
@@ -45,8 +45,8 @@ const ContactUs = () => {
         });
       })
       .catch((err) => {
-        setTimeout(() => setErrorAlert({ alertMessage: '' }), 3000);
         setErrorAlert({ alertMessage: 'Message failed to send' });
+        setTimeout(() => setErrorAlert({ alertMessage: '' }), 2000);
       });
     setFormData({
       name: '',
