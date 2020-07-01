@@ -10,7 +10,7 @@ import {
   OptionLink,
 } from './header.styled';
 
-function Header() {
+const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <HeaderContainer>
@@ -23,6 +23,6 @@ function Header() {
       <BurgerMenu open={open} setOpen={setOpen} />
     </HeaderContainer>
   );
-}
+};
 
 export default Header;
