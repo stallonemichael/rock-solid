@@ -14,7 +14,7 @@ const ProjectsPage = ({ fetchCollectionsStart, match }) => {
   }, [fetchCollectionsStart]);
 
   return (
-    <div>
+    <>
       <Route
         exact
         path={`${match.path}`}
@@ -25,7 +25,7 @@ const ProjectsPage = ({ fetchCollectionsStart, match }) => {
         component={CollectionPageContainer}
       />
       <Footer />
-    </div>
+    </>
   );
 };
 

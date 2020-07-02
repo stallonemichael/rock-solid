@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { ReactComponent as LogoSVG } from '../../assets/rock_solid_resized.svg';
 
-export const AboutContentContainer = styled.div`
+export const AboutContentContainer = styled.section`
   padding: 20px;
   text-align: center;
 `;
 
-export const TitleContainer = styled.div`
+export const TitleContainer = styled.h3`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ export const LogoContainer = styled(LogoSVG)`
   margin-bottom: 10px;
 `;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.p`
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;

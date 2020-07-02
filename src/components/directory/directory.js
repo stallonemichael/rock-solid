@@ -12,7 +12,7 @@ import {
 } from './directory.styled';
 
 const Directory = ({ sections }) => (
-  <div>
+  <>
     <DirectoryHeadingContainer>
       Let Us design your next project
     </DirectoryHeadingContainer>
@@ -21,7 +21,7 @@ const Directory = ({ sections }) => (
         <MenuItem key={id} {...otherSectionProps} />
       ))}
     </DirectoryMenuContainer>
-  </div>
+  </>
 );
 
 const mapStateToProps = createStructuredSelector({

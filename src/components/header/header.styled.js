@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   position: sticky;
   top: 0;
   background-color: white;
@@ -23,7 +23,7 @@ export const LogoContainer = styled(Link)`
   text-decoration: none;
 `;
 
-export const OptionsContainer = styled.div`
+export const OptionsContainer = styled.ul`
   width: 50%;
   height: 100%;
   display: none;

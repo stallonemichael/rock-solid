@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContactUsContainer = styled.div`
+export const ContactUsContainer = styled.section`
   display: flex;
   justify-content: center;
   width: 100%;

@@ -35,7 +35,7 @@ export const HeroText = styled.div`
   }
 `;
 
-export const ContactInfo = styled.div`
+export const ContactInfo = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

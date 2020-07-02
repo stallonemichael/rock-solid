@@ -14,7 +14,7 @@ import { theme } from './theme';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div>
+      <>
         <GlobalStyle />
         <Header />
         <ScrollToTop />
@@ -23,7 +23,7 @@ function App() {
           <Route path='/projects' component={ProjectsPage} />
           <Route path='/contact' component={ContactPage} />
         </Switch>
-      </div>
+      </>
     </ThemeProvider>
   );
 }

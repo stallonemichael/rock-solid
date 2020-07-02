@@ -22,7 +22,7 @@ export const DirectoryHeadingContainer = styled.h1`
   }
 `;
 
-export const DirectoryMenuContainer = styled.div`
+export const DirectoryMenuContainer = styled.section`
   display: flex;
   flex-direction: column;
   padding: 4px;
