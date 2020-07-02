@@ -63,7 +63,7 @@ export const ContactInfo = styled.section`
 
 export const ContactPhone = styled.div`
   align-self: center;
-  color: #4193cb;
+  color: ${({ theme }) => theme.primaryLight};
   margin-top: 4px;
 `;
 

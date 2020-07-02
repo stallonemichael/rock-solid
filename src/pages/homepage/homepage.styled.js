@@ -6,7 +6,7 @@ export const HomepageContainer = styled.div`
 `;
 
 export const ContactRibbon = styled.div`
-  background: #4193cb;
+  background: ${({ theme }) => theme.primaryLight};
   position: relative;
   display: flex;
   flex-direction: column;

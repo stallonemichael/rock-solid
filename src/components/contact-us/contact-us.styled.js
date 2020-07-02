@@ -5,7 +5,7 @@ export const ContactUsContainer = styled.section`
   justify-content: center;
   width: 100%;
   align-self: center;
-  color: #4193cb;
+  color: ${({ theme }) => theme.primaryLight};
 `;
 
 export const FormContainer = styled.form`

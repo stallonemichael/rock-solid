@@ -1,24 +1,24 @@
 import styled, { css } from 'styled-components';
 
 const buttonStyles = css`
-  background-color: #4193cb;
+  background-color: ${({ theme }) => theme.primaryLight};
   color: white;
-  border-color: #4193cb;
+  border-color: ${({ theme }) => theme.primaryLight};
 
   &:hover {
     background-color: white;
-    color: #4193cb;
-    border-color: #4193cb;
+    color: ${({ theme }) => theme.primaryLight};
+    border-color: ${({ theme }) => theme.primaryLight};
   }
 `;
 
 const invertedButtonStyles = css`
   background-color: white;
-  color: #4193cb;
+  color: ${({ theme }) => theme.primaryLight};
   border: 1px solid white;
 
   &:hover {
-    background-color: #4193cb;
+    background-color: ${({ theme }) => theme.primaryLight};
     color: white;
     border: none;
   }

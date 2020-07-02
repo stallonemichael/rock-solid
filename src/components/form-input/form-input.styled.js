@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 const shrinkLabelStyles = css`
   top: -14px;
   font-size: 12px;
-  color: #4193cb;
+  color: ${({ theme }) => theme.primaryLight};
 `;
 
 export const GroupContainer = styled.div`
@@ -22,7 +22,7 @@ export const FormInputContainer = styled.input`
   width: 100%;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid #4193cb;
+  border-bottom: 1px solid ${({ theme }) => theme.primaryLight};
   margin: 25px 0;
   &:focus {
     outline: none;
