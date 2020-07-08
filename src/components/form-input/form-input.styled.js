@@ -14,7 +14,7 @@ export const GroupContainer = styled.div`
 export const FormInputContainer = styled.input`
   background: none;
   background-color: white;
-  color: #808080;
+  color: ${({ theme }) => theme.secondary};
   font-weight: bold;
   font-size: 18px;
   padding: 10px 10px 10px 5px;

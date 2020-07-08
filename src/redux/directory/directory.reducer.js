@@ -2,7 +2,7 @@ const INITIAL_STATE = {
   sections: [
     {
       title: 'driveways',
-      imageUrl: 'https://i.ibb.co/D42LTBg/driveway1.jpg',
+      imageUrl: 'https://i.ibb.co/pfvb7L9/driveway1.jpg',
       id: 1,
       linkUrl: 'projects/driveways',
       imageNumber: 1,

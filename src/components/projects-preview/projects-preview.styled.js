@@ -16,7 +16,7 @@ export const Title = styled.h1`
   cursor: pointer;
   font-size: 38px;
   &:hover {
-    color: #808080;
+    color: ${({ theme }) => theme.secondary};
   }
 `;
 
