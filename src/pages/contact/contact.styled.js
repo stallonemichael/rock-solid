@@ -39,7 +39,7 @@ export const ContactInfo = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 20px;
@@ -47,7 +47,7 @@ export const ContactInfo = styled.section`
   text-align: center;
   padding: 0 6px 0 6px;
   @media screen and (min-width: 820px) {
-    font-size: 22px;
+    font-size: 1.3rem;
   }
 
   & h3 {
@@ -69,11 +69,11 @@ export const ContactPhone = styled.div`
 
 export const PhoneNumber = styled.a`
   color: inherit;
-  font-size: 20px;
+  font-size: 1.3rem;
   margin-left: 6px;
 
   @media screen and (min-width: 500px) {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
   @media screen and (min-width: 820px) {
   }

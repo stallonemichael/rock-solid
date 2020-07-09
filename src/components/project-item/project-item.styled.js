@@ -10,7 +10,7 @@ export const ProjectItemContainer = styled.div`
   @media screen and (min-width: 550px) {
     width: 45vw;
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1100px) {
     width: 23vw;
   }
 `;
