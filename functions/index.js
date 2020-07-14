@@ -32,6 +32,6 @@ exports.submit = functions.https.onRequest((req, res) => {
 
     mailTransport.sendMail(mailOptions);
     console.log('New email sent to:', gmailEmail);
-    res.status(200).send({ isEmailSend: true });
+    res.status(200).send({ isEmailSent: true });
   });
 });
