@@ -9,7 +9,6 @@ import store from './redux/store';
 import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
 
-import './index.css';
 import App from './App';
 
 const history = createBrowserHistory();
