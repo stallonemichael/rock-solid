@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const DirectoryHeadingContainer = styled.h1`
   display: flex;
   justify-content: center;
-  font-size: 16px;
+  font-size: 20px;
   margin: 10px 0 10px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
