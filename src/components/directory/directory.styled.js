@@ -6,7 +6,7 @@ export const DirectoryHeadingContainer = styled.h1`
   font-size: 20px;
   margin: 10px 0 10px 0;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 
   @media screen and (min-width: 530px) {
     font-size: 28px;
